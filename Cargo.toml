@@ -11,9 +11,9 @@ documentation = "https://docs.rs/hyper-tls"
 
 [dependencies]
 futures = "0.1.11"
-native-tls = "0.1"
-hyper =  { default-features = false, version = "0.11" }
-tokio-core = "0.1.6"
-tokio-io = "0.1"
+native-tls = {path = "../native-tls"}
+hyper =  { path = "../hyper" }
+tokio-core = {path = "../tokio-core"}
+tokio-io = {path = "../tokio/tokio-io"}
 tokio-service = "0.1"
-tokio-tls = { default-features = false, version = "0.1.3" }
+tokio-tls = {path = "../tokio-tls"}
